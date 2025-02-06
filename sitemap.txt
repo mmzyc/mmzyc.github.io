@@ -1,3 +1,5 @@
+https://mmzyc.github.io/2025/2/6/Hexo%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B/
+https://mmzyc.github.io/2025/2/5/Submit-search-and-include/
 https://mmzyc.github.io/things/instruments/index.html
 https://mmzyc.github.io/things/instruments/AI/index.html
 https://mmzyc.github.io/things/index.html
@@ -9,3 +11,7 @@ https://mmzyc.github.io/2025/1/20/hello-world/
 https://mmzyc.github.io/
 https://mmzyc.github.io/tags/%E5%8E%9F%E5%88%9B/
 https://mmzyc.github.io/tags/Hexo/
+https://mmzyc.github.io/tags/hexo/
+https://mmzyc.github.io/tags/%E6%90%9C%E7%B4%A2/
+https://mmzyc.github.io/tags/%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA/
+https://mmzyc.github.io/tags/%E6%90%AD%E5%BB%BA%E7%BD%91%E7%AB%99/
