@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://mmzyc.github.io/2025/2/6/Hexo%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B/</loc>
+    <loc>https://mmzyc.github.io/things/instruments/index.html</loc>
     
     <lastmod>2025-02-14</lastmod>
     
@@ -20,7 +20,16 @@
   </url>
   
   <url>
-    <loc>https://mmzyc.github.io/things/instruments/index.html</loc>
+    <loc>https://mmzyc.github.io/things/videos/index.html</loc>
+    
+    <lastmod>2025-02-14</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://mmzyc.github.io/2025/2/6/Hexo%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B/</loc>
     
     <lastmod>2025-02-14</lastmod>
     
@@ -31,7 +40,7 @@
   <url>
     <loc>https://mmzyc.github.io/2025/2/5/Submit-search-and-include/</loc>
     
-    <lastmod>2025-02-05</lastmod>
+    <lastmod>2025-02-14</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>

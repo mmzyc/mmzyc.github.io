@@ -35,6 +35,7 @@
     <content><![CDATA[<p><em><strong>转自<a href="https://asurada.zone/post/Blog-Search-Engine-Index/">Asurada’s Zone的“Hexo 博客主流搜索引擎收录详细指南”</a></strong></em></p>
 <p>———————————-<em><strong>以下内容大多为复制，少部分为作者修改</strong></em>———————————-</p>
 <p>如果希望自己博客的内容被更多人看到，搜索引擎所带来的流量是不容忽视的。本文详细介绍了如何向各大主流搜索引擎主动提交自己的博客，期望达到加快收录速度的目的。</p>
+<span id="more"></span>
 <h4 id="生成站点地图"><a href="#生成站点地图" class="headerlink" title="生成站点地图"></a>生成站点地图</h4><blockquote>
 <p>什么是站点地图？</p>
 <p>站点地图是一种文件，您可以在其中提供与您网站中的网页、视频或其他文件有关的信息，还可以说明这些内容之间的关系。Google 等搜索引擎会读取此文件，以便更加智能地抓取您的网站。站点地图会告诉 Google 您认为网站中的哪些网页和文件比较重要，还会提供与这些文件有关的重要信息：以网页为例，这些信息包括网页上次更新的时间、网页更改的频率，以及网页是否有其他语言版本。</p>
@@ -96,22 +97,22 @@
 <p>我使用的是GitHub提供的免费域名+仓库(我这里是乱写的，不喜勿喷)</p>
 <h2 id="获取GitHub域名仓库"><a href="#获取GitHub域名仓库" class="headerlink" title="获取GitHub域名仓库"></a>获取GitHub域名仓库</h2><p>首先你得有应该GitHub账号，注册我就不多说了，国网有可能进不上去，建议开魔法</p>
 <p><span class="highlight">(提示:如果你是第一次注册，名称记得取个好看&#x2F;好听&#x2F;好记的名字，因为这是我们的域名的一部分)</span></p>
-<p>在注册完账号后，点击右上角的“+号菜单”里的<img src="/Hexo%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B/b20b5aae21889c601c47ffc201492d5e_640_wx_fmt=png&from=appmsg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1.webp" alt="alt text">，创建你的仓库</p>
-<p>随后来到 Create a new repository 界面，<img src="/Hexo%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B/46ab141b2794d488c950b092b69a64e8_640_wx_fmt=png&from=appmsg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1.webp" alt="alt text">栏填写你创建的账号名字.github.io，必须按照这个格式写，否则为普通仓库，</p>
-<p><img src="/Hexo%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B/f29f376f68329ef95d094aa14071395a_640_wx_fmt=png&from=appmsg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1.webp" alt="alt text"></p>
+<p>在注册完账号后，点击右上角的“+号菜单”里的<img src="/2025/1/20/hello-world/b5aae21889c601c47ffc201492d5e_640_wx_fmt=png&from=appmsg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1.webp" alt="alt text">，创建你的仓库</p>
+<p>随后来到 Create a new repository 界面，<img src="/2025/1/20/hello-world/b141b2794d488c950b092b69a64e8_640_wx_fmt=png&from=appmsg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1.webp" alt="alt text">栏填写你创建的账号名字.github.io，必须按照这个格式写，否则为普通仓库，</p>
+<p><img src="/2025/1/20/hello-world/f376f68329ef95d094aa14071395a_640_wx_fmt=png&from=appmsg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1.webp" alt="alt text"></p>
 <p>这一栏如图选择，</p>
-<p><img src="/Hexo%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B/409ca959131be6ea94c85b2145e00d7c_640_wx_fmt=png&from=appmsg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1.webp" alt="alt text"></p>
-<p>这一栏不选择，如图所示，最后点击<img src="/Hexo%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B/33cedd736e139358af8a323385c3f7b2_640_wx_fmt=png&from=appmsg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1.webp" alt="alt text">就ok了</p>
+<p><img src="/2025/1/20/hello-world/ca959131be6ea94c85b2145e00d7c_640_wx_fmt=png&from=appmsg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1.webp" alt="alt text"></p>
+<p>这一栏不选择，如图所示，最后点击<img src="/2025/1/20/hello-world/edd736e139358af8a323385c3f7b2_640_wx_fmt=png&from=appmsg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1.webp" alt="alt text">就ok了</p>
 <h2 id="于是乎，你的域名-仓库就有了，免费的！图片"><a href="#于是乎，你的域名-仓库就有了，免费的！图片" class="headerlink" title="于是乎，你的域名+仓库就有了，免费的！图片"></a>于是乎，你的域名+仓库就有了，免费的！图片</h2><h1 id="配置网站"><a href="#配置网站" class="headerlink" title="配置网站"></a>配置网站</h1><p>在主目录(即你创建的博客文件夹)的 <span class="highlight">_config.yml</span> 文件中配置网站，配置选项可在 <em><a href="https://hexo.io/zh-cn/docs/configuration">https://hexo.io/zh-cn/docs/configuration</a></em> 处查看，主要有</p>
-<p><img src="/Hexo%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B/8105644b9f1f4b2e9aa23a917240a491_640_wx_fmt=png&from=appmsg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1.webp" alt="alt text"></p>
+<p><img src="/2025/1/20/hello-world/5644b9f1f4b2e9aa23a917240a491_640_wx_fmt=png&from=appmsg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1.webp" alt="alt text"></p>
 <p>这些选项</p>
 <h1 id="命令"><a href="#命令" class="headerlink" title="命令"></a>命令</h1><p>接下来是一些常用命令，可在 <em><a href="https://hexo.io/zh-cn/docs/commands">https://hexo.io/zh-cn/docs/commands</a></em> 查看</p>
 <p>常用命令有</p>
-<p><img src="/Hexo%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B/d470b2c9d225bb2d52c56ce952979c29_640_wx_fmt=png&from=appmsg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1.webp" alt="alt text"></p>
-<p><img src="/Hexo%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B/447e9157802d36d3427c1fc83d4a2c11_640_wx_fmt=png&from=appmsg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1.webp" alt="alt text"></p>
-<p><img src="/Hexo%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B/ede02bac34b4b24d8760f4f76fa266c6_640_wx_fmt=png&from=appmsg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1.webp" alt="alt text"></p>
-<p><img src="/Hexo%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B/5a8ea038883cce0c82771b436f1835e6_640_wx_fmt=png&from=appmsg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1.webp" alt="alt text"></p>
-<p><img src="/Hexo%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B/4eba5d2d62409cc7b02d7c0e1073ac40_640_wx_fmt=png&from=appmsg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1.webp" alt="alt text"></p>
+<p><img src="/2025/1/20/hello-world/0b2c9d225bb2d52c56ce952979c29_640_wx_fmt=png&from=appmsg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1.webp" alt="alt text"></p>
+<p><img src="/2025/1/20/hello-world/e9157802d36d3427c1fc83d4a2c11_640_wx_fmt=png&from=appmsg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1.webp" alt="alt text"></p>
+<p><img src="/2025/1/20/hello-world/02bac34b4b24d8760f4f76fa266c6_640_wx_fmt=png&from=appmsg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1.webp" alt="alt text"></p>
+<p><img src="/2025/1/20/hello-world/ea038883cce0c82771b436f1835e6_640_wx_fmt=png&from=appmsg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1.webp" alt="alt text"></p>
+<p><img src="/2025/1/20/hello-world/a5d2d62409cc7b02d7c0e1073ac40_640_wx_fmt=png&from=appmsg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1.webp" alt="alt text"></p>
 <p>这些</p>
 <h1 id="结束……？"><a href="#结束……？" class="headerlink" title="结束……？"></a>结束……？</h1><p>使用</p>
 <p><code>hexo new post 你的标题</code><br>(这里的标题是文件名，建议用英语，空格用 - 代替) 写几篇posts后，</p>
