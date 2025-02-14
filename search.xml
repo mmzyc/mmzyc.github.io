@@ -54,6 +54,7 @@
     <title>搭建个人Github+Hexo博客(中)</title>
     <url>/2025/2/6/Hexo%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B/</url>
     <content><![CDATA[<h2 id="什么是Hexo？"><a href="#什么是Hexo？" class="headerlink" title="什么是Hexo？"></a>什么是Hexo？</h2><p>Hexo 是一款快速、简单且功能强大的博客框架。您可以使用Markdown（或其他标记语言）撰写帖子，Hexo 可在几秒钟内生成具有精美主题的静态文件。</p>
+<p>&lt; !– more –&gt;</p>
 <h1 id="安装框架"><a href="#安装框架" class="headerlink" title="安装框架"></a>安装框架</h1><h2 id="安装前置"><a href="#安装前置" class="headerlink" title="安装前置"></a>安装前置</h2><p>下载并安装 git</p>
 <p>安装 <a href="https://nodejs.org/en/download/">Node.js</a></p>
 <style>
