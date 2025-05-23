@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>Hello World</title>
+    <url>/2025/1/20/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>搭建个人Github+Hexo博客(中)</title>
+    <url>/2025/2/6/Hexo%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B/</url>
+    <content><![CDATA[<h2 id="什么是Hexo？"><a href="#什么是Hexo？" class="headerlink" title="什么是Hexo？"></a>什么是Hexo？</h2><p>Hexo 是一款快速、简单且功能强大的博客框架。您可以使用Markdown（或其他标记语言）撰写帖子，Hexo 可在几秒钟内生成具有精美主题的静态文件。</p>
+<span id="more"></span>
+
+<h1 id="安装框架"><a href="#安装框架" class="headerlink" title="安装框架"></a>安装框架</h1><h2 id="安装前置"><a href="#安装前置" class="headerlink" title="安装前置"></a>安装前置</h2><p>下载并安装 git</p>
+<p>安装 <a href="https://nodejs.org/en/download/">Node.js</a></p>
+<style>
+.highlight {
+    background-color: rgb(179, 189, 241); /* 自定义高亮颜色 */
+    color: black; /* 字体颜色 */
+}
+</style>
+
+<p><span class="highlight">使用 Node.js 官方安装程序时，请确保勾选 Add to PATH 选项（默认已勾选）</span></p>
+<h2 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h2><p>所有必备的应用程序安装完成后，即可使用 npm 安装 Hexo</p>
+<p><code>npm install -g hexo-cli</code><br>进阶安装和使用</p>
+<p>对于熟悉 npm 的进阶用户，可以仅局部安装 hexo 包<br><code>npm install hexo</code><br>到此，Hexo框架就搭建完成了</p>
+<blockquote>
+<p>参阅 <em><a href="https://hexo.io/zh-cn/docs/">https://hexo.io/zh-cn/docs/</a> 原文链接</em></p>
+</blockquote>
+<h1 id="建站"><a href="#建站" class="headerlink" title="建站"></a>建站</h1><p>现在，我们可以开始建设个人博客了</p>
+<p>在刚刚搭建的文件夹，使用git(右键文件夹内部)输入以下指令:</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo init &lt;folder&gt;</span><br><span class="line">cd &lt;folder&gt;</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure>
+
+<p>(folder是文件夹名称，随便填，以后的工作都是在里面展开)</p>
+<p>现在，你应该能看到你创建的文件夹</p>
+<p>初始化后，您的项目文件夹将如下所示：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">.</span><br><span class="line">├── _config.yml</span><br><span class="line">├── package.json</span><br><span class="line">├── scaffolds</span><br><span class="line">├── source</span><br><span class="line">|   ├── _drafts</span><br><span class="line">|   └── _posts</span><br><span class="line">└── themes</span><br></pre></td></tr></table></figure>
+
+<h2 id="config-yml"><a href="#config-yml" class="headerlink" title="_config.yml"></a>_config.yml</h2><p>网站的 配置 文件。您可以在此配置大部分的参数。</p>
+<p>package.json<br>应用程序的信息。EJS, Stylus 和 Markdown 渲染引擎 已默认安装，您可以自由移除。如果您想，可以稍后卸载它们。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">package.json</span><br><span class="line">&#123;</span><br><span class="line">  &quot;name&quot;: &quot;hexo-site&quot;,</span><br><span class="line">  &quot;version&quot;: &quot;0.0.0&quot;,</span><br><span class="line">  &quot;private&quot;: true,</span><br><span class="line">  &quot;hexo&quot;: &#123;</span><br><span class="line">    &quot;version&quot;: &quot;&quot;</span><br><span class="line">  &#125;,</span><br><span class="line">  &quot;dependencies&quot;: &#123;</span><br><span class="line">    &quot;hexo&quot;: &quot;^7.0.0&quot;,</span><br><span class="line">    &quot;hexo-generator-archive&quot;: &quot;^2.0.0&quot;,</span><br><span class="line">    &quot;hexo-generator-category&quot;: &quot;^2.0.0&quot;,</span><br><span class="line">    &quot;hexo-generator-index&quot;: &quot;^3.0.0&quot;,</span><br><span class="line">    &quot;hexo-generator-tag&quot;: &quot;^2.0.0&quot;,</span><br><span class="line">    &quot;hexo-renderer-ejs&quot;: &quot;^2.0.0&quot;,</span><br><span class="line">    &quot;hexo-renderer-stylus&quot;: &quot;^3.0.0&quot;,</span><br><span class="line">    &quot;hexo-renderer-marked&quot;: &quot;^6.0.0&quot;,</span><br><span class="line">    &quot;hexo-server&quot;: &quot;^3.0.0&quot;,</span><br><span class="line">    &quot;hexo-theme-landscape&quot;: &quot;^1.0.0&quot;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="scaffolds"><a href="#scaffolds" class="headerlink" title="scaffolds"></a>scaffolds</h2><p>模版 文件夹。当您新建文章时，Hexo 会根据 scaffold 来创建文件。</p>
+<h2 id="source"><a href="#source" class="headerlink" title="source"></a>source</h2><p>资源文件夹。是存放用户资源的地方。除 <span class="highlight">_posts</span> 文件夹之外，开头命名为 <span class="highlight">_</span>(下划线)的文件 &#x2F; 文件夹和隐藏的文件将会被忽略。Markdown 和 HTML 文件会被解析并放到 <span class="highlight">public</span> 文件夹，而其他文件会被拷贝过去。</p>
+<h2 id="themes"><a href="#themes" class="headerlink" title="themes"></a>themes</h2><p>主题 文件夹。Hexo 会根据主题来生成静态页面。</p>
+<blockquote>
+<p>参阅 <em><a href="https://hexo.io/zh-cn/docs/setup">https://hexo.io/zh-cn/docs/setup</a> 原文链接</em></p>
+</blockquote>
+<p>至此，你成功建立了属于你的个人博客🎉🎉🎉</p>
+<h1 id="But……？"><a href="#But……？" class="headerlink" title="But……？"></a>But……？</h1><p>现在只是有了文件，但并不可视化(我也不知道这个词是不是这么用的)，要想让其他人能看到我们的博客，我们需要配置域名和服务器</p>
+<p>我使用的是GitHub提供的免费域名+仓库(我这里是乱写的，不喜勿喷)</p>
+<h2 id="获取GitHub域名仓库"><a href="#获取GitHub域名仓库" class="headerlink" title="获取GitHub域名仓库"></a>获取GitHub域名仓库</h2><p>首先你得有应该GitHub账号，注册我就不多说了，国网有可能进不上去，建议开魔法</p>
+<p><span class="highlight">(提示:如果你是第一次注册，名称记得取个好看&#x2F;好听&#x2F;好记的名字，因为这是我们的域名的一部分)</span></p>
+<p>在注册完账号后，点击右上角的“+号菜单”里的<img src="/2025/2/6/Hexo%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B/b20b5aae21889c601c47ffc201492d5e_640_wx_fmt=png&from=appmsg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1.webp" alt="alt text">，创建你的仓库</p>
+<p>随后来到 Create a new repository 界面，<img src="/2025/2/6/Hexo%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B/46ab141b2794d488c950b092b69a64e8_640_wx_fmt=png&from=appmsg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1.webp" alt="alt text">栏填写你创建的账号名字.github.io，必须按照这个格式写，否则为普通仓库，</p>
+<p><img src="/2025/2/6/Hexo%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B/f29f376f68329ef95d094aa14071395a_640_wx_fmt=png&from=appmsg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1.webp" alt="alt text"></p>
+<p>这一栏如图选择，</p>
+<p><img src="/2025/2/6/Hexo%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B/409ca959131be6ea94c85b2145e00d7c_640_wx_fmt=png&from=appmsg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1.webp" alt="alt text"></p>
+<p>这一栏不选择，如图所示，最后点击<img src="/2025/2/6/Hexo%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B/33cedd736e139358af8a323385c3f7b2_640_wx_fmt=png&from=appmsg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1.webp" alt="alt text">就ok了</p>
+<h2 id="于是乎，你的域名-仓库就有了，免费的！图片"><a href="#于是乎，你的域名-仓库就有了，免费的！图片" class="headerlink" title="于是乎，你的域名+仓库就有了，免费的！图片"></a>于是乎，你的域名+仓库就有了，免费的！图片</h2><h1 id="配置网站"><a href="#配置网站" class="headerlink" title="配置网站"></a>配置网站</h1><p>在主目录(即你创建的博客文件夹)的 <span class="highlight">_config.yml</span> 文件中配置网站，配置选项可在 <em><a href="https://hexo.io/zh-cn/docs/configuration">https://hexo.io/zh-cn/docs/configuration</a></em> 处查看，主要有</p>
+<p><img src="/2025/2/6/Hexo%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B/8105644b9f1f4b2e9aa23a917240a491_640_wx_fmt=png&from=appmsg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1.webp" alt="alt text"></p>
+<p>这些选项</p>
+<h1 id="命令"><a href="#命令" class="headerlink" title="命令"></a>命令</h1><p>接下来是一些常用命令，可在 <em><a href="https://hexo.io/zh-cn/docs/commands">https://hexo.io/zh-cn/docs/commands</a></em> 查看</p>
+<p>常用命令有</p>
+<p><img src="/2025/2/6/Hexo%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B/d470b2c9d225bb2d52c56ce952979c29_640_wx_fmt=png&from=appmsg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1.webp" alt="alt text"></p>
+<p><img src="/2025/2/6/Hexo%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B/447e9157802d36d3427c1fc83d4a2c11_640_wx_fmt=png&from=appmsg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1.webp" alt="alt text"></p>
+<p><img src="/2025/2/6/Hexo%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B/ede02bac34b4b24d8760f4f76fa266c6_640_wx_fmt=png&from=appmsg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1.webp" alt="alt text"></p>
+<p><img src="/2025/2/6/Hexo%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B/5a8ea038883cce0c82771b436f1835e6_640_wx_fmt=png&from=appmsg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1.webp" alt="alt text"></p>
+<p><img src="/2025/2/6/Hexo%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B/4eba5d2d62409cc7b02d7c0e1073ac40_640_wx_fmt=png&from=appmsg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1.webp" alt="alt text"></p>
+<p>这些</p>
+<h1 id="结束……？"><a href="#结束……？" class="headerlink" title="结束……？"></a>结束……？</h1><p>使用</p>
+<p><code>hexo new post 你的标题</code><br>(这里的标题是文件名，建议用英语，空格用 - 代替) 写几篇posts后，</p>
+<p>在git使用命令</p>
+<p><code>hexo g -d</code><br>(生成静态文件，在生成完成后部署)就可以在之前的域名看到自己的博客了！🎉🎉🎉(在一两分钟后，部署也需要时间)</p>
+<p>这篇就先写到这里吧，后面会再找时间出一些拓展功能，可以去我的网站<a href="https://mmzyc.github.io/">https://mmzyc.github.io/</a> 看看(虽然都不常更新)</p>
+<p>本文到现在统计时已有1438字，实在肝不动了，写了至少一小时，以后更新内容不定，可以在评论区留言，请大家多多支持，多多鼓励一下，谢谢了！</p>
+<p>我们下篇教程再见~</p>
+<h3 id="BY-木锦棉棉"><a href="#BY-木锦棉棉" class="headerlink" title="BY 木锦棉棉"></a>BY 木锦棉棉</h3>]]></content>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>搭建网站</tag>
+        <tag>原创</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>将网站提交搜索引擎收录</title>
+    <url>/2025/2/5/Submit-search-and-include/</url>
+    <content><![CDATA[<p><em><strong>转自<a href="https://asurada.zone/post/Blog-Search-Engine-Index/">Asurada’s Zone的“Hexo 博客主流搜索引擎收录详细指南”</a></strong></em></p>
+<p>———————————-<em><strong>以下内容大多为复制，少部分为作者修改</strong></em>———————————-</p>
+<p>如果希望自己博客的内容被更多人看到，搜索引擎所带来的流量是不容忽视的。本文详细介绍了如何向各大主流搜索引擎主动提交自己的博客，期望达到加快收录速度的目的。</p>
+<span id="more"></span>
+<h4 id="生成站点地图"><a href="#生成站点地图" class="headerlink" title="生成站点地图"></a>生成站点地图</h4><blockquote>
+<p>什么是站点地图？</p>
+<p>站点地图是一种文件，您可以在其中提供与您网站中的网页、视频或其他文件有关的信息，还可以说明这些内容之间的关系。Google 等搜索引擎会读取此文件，以便更加智能地抓取您的网站。站点地图会告诉 Google 您认为网站中的哪些网页和文件比较重要，还会提供与这些文件有关的重要信息：以网页为例，这些信息包括网页上次更新的时间、网页更改的频率，以及网页是否有其他语言版本。</p>
+</blockquote>
+<p>安装 hexo-generator-sitemap 插件:</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-generator-sitemap --save</span><br></pre></td></tr></table></figure>
+
+
+]]></content>
+      <tags>
+        <tag>hexo</tag>
+        <tag>搜索</tag>
+        <tag>网站搭建</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>搭建个人Github+Hexo博客(前言)</title>
+    <url>/2025/1/20/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BAGithub+Hexo%E5%8D%9A%E5%AE%A2(%E5%89%8D%E8%A8%80)/</url>
+    <content><![CDATA[<h1 id="搭建个人Github-Hexo博客-前言"><a href="#搭建个人Github-Hexo博客-前言" class="headerlink" title="搭建个人Github+Hexo博客(前言)"></a>搭建个人Github+Hexo博客(前言)</h1><p>by 木锦棉棉 2025&#x2F;1&#x2F;20 22:31:31</p>
+<h2 id="前言"><a href="#前言" class="headerlink" title="前言:"></a>前言:</h2><p>在寻找资源时，我们往往会发现一些资源存在于一些个人blog上，那么你有没有想过拥有一个自己的博客？如今越来越多的博客浮现在互联网上，样式各异，功能不同。如果你也想有一个自己的博客，就请跟着这个教程，一步步创建属于自己的博客。</p>
+]]></content>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>原创</tag>
+      </tags>
+  </entry>
+</search>
